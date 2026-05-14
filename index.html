@@ -11,18 +11,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<<<<<<< HEAD:Index.html
     <link rel="stylesheet" href="style.css">
-=======
-    <link rel="stylesheet" href="Style/style.css">
->>>>>>> 723908bfc7f84c5d9b23b7e7f146526a5c31b894:index.html
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <i class="fas fa-rocket"></i> A-List
+                <img src="FINAL_LOGO.png" alt="A-List Marketing Logo" class="navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -41,12 +37,29 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Transform Your Brand with Creative Solutions</h1>
-            <p>We specialize in graphic design, social media marketing, web development, and professional photography services</p>
-            <div>
-                <button class="cta-button" onclick="document.getElementById('services').scrollIntoView()">Explore Services</button>
-                <button class="cta-button cta-secondary" onclick="document.getElementById('contact').scrollIntoView()">Contact Us</button>
+        <!-- Decorative Shapes -->
+        <div class="shape-circle-1"></div>
+        <div class="shape-circle-2"></div>
+        <div class="shape-triangle"></div>
+        <div class="shape-square"></div>
+        <div class="shape-dot-cluster"></div>
+        
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1 class="hero-headline">Make it BIG, Make it A-List!</h1>
+                <p>We specialize in graphic design, social media marketing, web development, and professional photography services</p>
+                <div>
+                    <button class="cta-button" onclick="document.getElementById('services').scrollIntoView()">Explore Services</button>
+                    <button class="cta-button cta-secondary" onclick="document.getElementById('contact').scrollIntoView()">Contact Us</button>
+                </div>
+            </div>
+            
+            <div class="hero-video">
+                <video autoplay muted loop playsinline class="video-player">
+                    <source src="SHORT_VIDEO_INTRO.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-overlay"></div>
             </div>
         </div>
     </section>
@@ -58,9 +71,7 @@
                 <div>
                     <h3>Who We Are</h3>
                     <h2 class="section-title">Innovative Marketing Partners for Your Success</h2>
-                    <p>CreativeFlow is a dynamic marketing startup dedicated to helping businesses establish a powerful digital presence. With a team of passionate designers, marketers, and content creators, we transform ideas into compelling visual and digital experiences.</p>
-                    <p>Our approach combines strategic thinking with creative excellence. We believe every brand has a unique story, and we're here to tell it in the most impactful way possible.</p>
-                    <p>Whether you're a startup looking to make your mark or an established business ready to level up, we've got the expertise and passion to help you succeed.</p>
+                    <p>A-List Marketing is a Gen Z-led creative marketing agency helping brands grow through bold ideas, modern content, and strategic digital marketing. Founded by young creatives with fresh perspectives and innovative strategies, A-LIST is built for startups, small businesses, and brands ready to level up in today’s fast-moving digital world. We believe brands deserve more than basic marketing — they deserve attention, culture, and impact.</p>
                     <button class="cta-button" style="margin-top: 2rem;">Learn More</button>
                 </div>
                 <div class="about-image">
@@ -79,7 +90,7 @@
         <div class="container">
             <div style="text-align: center; margin-bottom: 4rem;">
                 <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive solutions tailored to your business needs</p>
+                <p class="section-subtitle">Four core services to elevate your brand</p>
             </div>
             
             <div class="row g-4">
@@ -99,16 +110,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card fade-in-up" style="animation-delay: 0.3s;">
-                        <i class="fas fa-code service-icon"></i>
-                        <h3>Website Development</h3>
-                        <p>Professional, responsive static websites that convert. Clean code, fast loading times, and SEO-optimized for maximum visibility.</p>
-                    </div>
-                </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="service-card fade-in-up" style="animation-delay: 0.3s;">
                         <i class="fas fa-film service-icon"></i>
                         <h3>Video Production</h3>
                         <p>Professional video creation and editing. From product videos to promotional content, we bring your vision to life with cinematic quality.</p>
@@ -116,18 +120,10 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-card fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="service-card fade-in-up" style="animation-delay: 0.4s;">
                         <i class="fas fa-camera service-icon"></i>
                         <h3>Photography Services</h3>
                         <p>High-quality photography for your brand. Product shoots, corporate events, and lifestyle photography with professional editing.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card fade-in-up" style="animation-delay: 0.6s;">
-                        <i class="fas fa-handshake service-icon"></i>
-                        <h3>Partnership Services</h3>
-                        <p>Access to our network of professional partners for specialized services. Comprehensive solutions for all your marketing needs.</p>
                     </div>
                 </div>
             </div>
@@ -211,14 +207,15 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h5>About CreativeFlow</h5>
-                    <p>We're a team of creative professionals committed to delivering exceptional marketing and design solutions for startups and established businesses.</p>
+                    <h5>Follow Us</h5>
+                    <p>Connect with A-List Marketing on our social channels</p>
                     <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/alistmarketing" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/alistmarketing" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/alistmarketing" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/alistmarketing" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: #bbb;">Stay updated with our latest campaigns and creative work</p>
                 </div>
 
                 <div class="footer-section">
@@ -246,15 +243,15 @@
                 <div class="footer-section">
                     <h5>Contact Info</h5>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:hello@creativeflow.com">hello@creativeflow.com</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:alists.marketing@gmail.com"> alists.marketing@gmail.com</a></li>
                         <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Lucena, Calabarzon, PH</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Manila, Philippines</li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 CreativeFlow. All rights reserved. | Transforming Ideas Into Impact</p>
+                <p>&copy; 2026 A-List Marketing. All rights reserved. | Transforming Ideas Into Impact</p>
             </div>
         </div>
     </footer>
